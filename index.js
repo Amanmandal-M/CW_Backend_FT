@@ -126,7 +126,7 @@ io.on("connection",(socket)=>{
 
 // =========== Listening to Server ===========
 
-httpServer.listen(process.env.port,async()=>{
+httpServer.listen(process.env.PORT,async()=>{
 
     try {
         await connection;
@@ -134,5 +134,5 @@ httpServer.listen(process.env.port,async()=>{
     } catch (error) {
         console.log("Not able to connected to DB")
     }
-    console.log(`Server is running at port ${process.env.port}`)
+    console.log(`Server is running at PORT ${process.env.PORT}`)
 })
